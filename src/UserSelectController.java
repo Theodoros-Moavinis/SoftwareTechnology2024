@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.stage.Stage;
 import javafx.scene.Node;
 
-public class UserSelectController {
+public class UserSelectController extends Controller {
     //έχουν W μπροστά γιατί είναι στο Welcome view.
     @FXML
     private Button GuestBtn;
@@ -20,33 +20,17 @@ public class UserSelectController {
 
     @FXML
     void GuestBtn_Clicked(ActionEvent event) {
-        try {
-            //FXMLLoader loader = new FXMLLoader(getClass().getResource("guest_view.fxml"));
-            //Parent root = loader.load();
-            //Stage stage = new Stage();
-            //stage.setScene(new Scene(root));
-            //stage.show();
-
-            Parent root  = FXMLLoader.load(getClass().getResource("guest_view.fxml"));
-            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
-
-            Scene scene =  new Scene(root);
-            stage.setScene(scene);
-
-            //κάπως πρέπει το προηγούμενο stage να κλείνει.
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+        switch_scene(event, "guest_view.fxml");
     }
 
     @FXML
     void W_LogInBtn_Clicked(ActionEvent event) {
-
+        switch_scene(event, "log_in_view.fxml");
     }
 
     @FXML
     void W_SignUpBtn_Clicked(ActionEvent event) {
-
+        switch_scene(event, "register_view.fxml");
     }
 
 }
