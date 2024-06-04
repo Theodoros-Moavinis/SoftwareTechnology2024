@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class LogInController {
+public class LogInController extends Controller{
 
     @FXML
     private Label ErrorTextArea;
@@ -22,6 +22,11 @@ public class LogInController {
     @FXML
     void log_in_cont_clicked(ActionEvent event) {
 
+    }
+
+    @FXML
+    void backBtnClicked(ActionEvent event) {
+        switch_scene(event, "welcome_window.fxml");
     }
 
 }

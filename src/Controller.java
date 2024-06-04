@@ -19,4 +19,18 @@ public class Controller {
             e.printStackTrace();
         }
     }
+
+    public void popup(ActionEvent event, String filename, String title){
+        try {
+            Parent popup_root =FXMLLoader.load(getClass().getResource(filename));
+            Scene popup_scene = new Scene(popup_root);
+            Stage popup_Stage = new Stage();
+            popup_Stage.setTitle(title);
+            popup_Stage.setScene(popup_scene);
+            popup_Stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

@@ -17,5 +17,6 @@
       <Label fx:id="ErrorTextArea" layoutX="167.0" layoutY="306.0" text="ErrorArea" AnchorPane.leftAnchor="40.0" />
       <PasswordField fx:id="repPassField" layoutX="131.0" layoutY="206.0" promptText="Κωδικός" />
       <Label layoutX="13.0" layoutY="210.0" text="repeat passowrd :" />
+      <Button fx:id="backBtn" layoutX="9.0" layoutY="10.0" mnemonicParsing="false" onAction="#backBtnClicked" text="Back" />
    </children>
 </AnchorPane>

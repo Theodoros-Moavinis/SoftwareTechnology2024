@@ -15,5 +15,6 @@
       <PasswordField fx:id="passwordField" layoutX="113.0" layoutY="219.0" promptText="Κωδικός" />
       <Button fx:id="cont_btn" layoutX="168.0" layoutY="396.0" mnemonicParsing="false" onAction="#log_in_cont_clicked" text="Συνέχεια" AnchorPane.topAnchor="396.0" />
       <Label fx:id="ErrorTextArea" layoutX="167.0" layoutY="306.0" text="ErrorArea" AnchorPane.leftAnchor="40.0" />
+      <Button fx:id="backBtn" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#backBtnClicked" text="Back" />
    </children>
 </AnchorPane>

@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class RegisterController {
+public class RegisterController extends Controller{
 
     @FXML
     private Label ErrorTextArea;
@@ -21,6 +21,11 @@ public class RegisterController {
 
     @FXML
     private PasswordField repPassField;
+
+    @FXML
+    void backBtnClicked(ActionEvent event) {
+        switch_scene(event, "welcome_window.fxml");
+    }
 
     @FXML
     void log_in_cont_clicked(ActionEvent event) {
