@@ -11,7 +11,7 @@ public class App extends Application {
     @Override
     public void start(Stage primaryStage) {
         try {
-            Parent root =FXMLLoader.load(getClass().getResource("welcome_window.fxml"));
+            Parent root =FXMLLoader.load(getClass().getResource("WelcomeWindow.fxml"));
             Scene scene = new Scene(root);
             primaryStage.setTitle("Welcome");
             primaryStage.setScene(scene);
