@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="126.0" layoutY="55.0" prefHeight="50.0" prefWidth="250.0" text="MENU οπως στην αρχικη " />
+      <TextArea layoutX="126.0" layoutY="118.0" prefHeight="200.0" prefWidth="200.0" text="Η φορμα με τις επιλογες που θα&#10;κανει ο χρηστης για το δικο του &#10;πακετο.Στην ημερομηνια&#10;και τον προορισμο που εχει&#10;δωσει απο την κεντρικη καρτελα&#10;πακετα. &#10;" />
+      <Label layoutX="335.0" layoutY="300.0" prefHeight="37.0" prefWidth="142.0" text="Συνολικο κοστος " />
+      <Button layoutX="326.0" layoutY="338.0" mnemonicParsing="false" text="KΡΑΤΗΣΗ" />
+   </children>
+</AnchorPane>
