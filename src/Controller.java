@@ -8,7 +8,6 @@ import javafx.stage.Stage;
 public class Controller {
     public void switch_scene(ActionEvent event, String filename){
             try {
-
             Parent root  = FXMLLoader.load(getClass().getResource(filename));
             Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
 
