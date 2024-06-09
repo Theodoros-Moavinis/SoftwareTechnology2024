@@ -3,6 +3,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+//import javafx.scene.control.ChoiceBox;
 import javafx.stage.Stage;
 
 public class Controller {
@@ -32,4 +33,10 @@ public class Controller {
             e.printStackTrace();
         }
     }
+    /*
+    public void populateChoiceBox(ChoiceBox CB, String[] items){
+        //maybe add if it is needed
+
+    }
+    */
 }
