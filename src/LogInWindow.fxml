@@ -9,12 +9,12 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LogInWindowController">
    <children>
       <Label layoutX="146.0" layoutY="14.0" text="Είσοδος / Log In" />
-      <Label layoutX="66.0" layoutY="73.0" text="email :" AnchorPane.leftAnchor="66.0" />
-      <Label layoutX="110.0" layoutY="223.0" text="passowrd :" AnchorPane.leftAnchor="40.0" />
-      <TextField fx:id="EmailField" layoutX="115.0" layoutY="69.0" promptText="email" />
+      <Label layoutX="38.0" layoutY="73.0" text="Username :" AnchorPane.leftAnchor="38.0" />
+      <Label layoutX="25.0" layoutY="223.0" text="Passoword :" AnchorPane.leftAnchor="25.0" />
+      <TextField fx:id="UsernameField" layoutX="115.0" layoutY="69.0" promptText="Username" />
       <PasswordField fx:id="PasswordField" layoutX="113.0" layoutY="219.0" promptText="Κωδικός" />
       <Button fx:id="ContinueButton" layoutX="168.0" layoutY="396.0" mnemonicParsing="false" onAction="#ContinueButtonClicked" text="Συνέχεια" AnchorPane.topAnchor="396.0" />
-      <Label fx:id="ErrorArea" layoutX="167.0" layoutY="306.0" text="ErrorArea" AnchorPane.leftAnchor="40.0" />
+      <Label fx:id="ErrorArea" layoutX="167.0" layoutY="306.0" AnchorPane.leftAnchor="40.0" />
       <Button fx:id="BackButton" layoutX="14.0" layoutY="10.0" mnemonicParsing="false" onAction="#BackButtonClicked" text="Back" />
    </children>
 </AnchorPane>

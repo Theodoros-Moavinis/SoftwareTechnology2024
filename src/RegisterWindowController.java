@@ -5,7 +5,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class RegisterWindowController extends Controller{
+public class RegisterWindowController extends Controller {
 
     @FXML
     private Button BackButton;
@@ -14,7 +14,7 @@ public class RegisterWindowController extends Controller{
     private Button ContinueButton;
 
     @FXML
-    private TextField EmailField;
+    private TextField UsernameField;
 
     @FXML
     private Label ErrorTextArea;
@@ -32,6 +32,10 @@ public class RegisterWindowController extends Controller{
 
     @FXML
     void ContinueButtonClicked(ActionEvent event) {
+        if (PasswordField.getText().equals(RepeatPasswordField.getText())) {
+            User currentUser = new User(UsernameField.getText(), PasswordField.getText());
+            switch_scene(event, "UserWindow.fxml");
+        }
 
     }
 

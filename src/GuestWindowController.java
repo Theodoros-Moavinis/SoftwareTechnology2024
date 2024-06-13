@@ -9,6 +9,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.ListView;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 
 public class GuestWindowController extends Controller implements Initializable {
 
@@ -20,6 +22,12 @@ public class GuestWindowController extends Controller implements Initializable {
 
     @FXML
     private ListView<String> PackageListView;
+
+     @FXML
+    private PasswordField PartnerPasswordField;
+
+    @FXML
+    private TextField PartnerUsernameField;
 
     @FXML
     private Button ReservationButton;
