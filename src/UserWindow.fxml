@@ -69,9 +69,14 @@
                      </children></AnchorPane>
             </content>
           </Tab>
+            <Tab text="Συνεργατες">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
         </tabs>
       </TabPane>
-      <Label fx:id="UsernameText" layoutX="14.0" layoutY="14.0" text=" Guest User / στοιχέια χρήστη" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="400.0" />
+      <Label fx:id="InformationLabel" layoutX="14.0" layoutY="14.0" text="." AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="400.0" />
       <Button fx:id="ReservationButton" layoutX="548.0" layoutY="10.0" mnemonicParsing="false" onAction="#ReservationButtonClicked" text="Κράτηση" />
    </children>
 </AnchorPane>

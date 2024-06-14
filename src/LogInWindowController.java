@@ -1,9 +1,16 @@
+import java.io.IOException;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+import javafx.fxml.FXMLLoader;
 
 public class LogInWindowController extends Controller {
 
@@ -31,11 +38,24 @@ public class LogInWindowController extends Controller {
     User testUser = new User("test", "password");
 
     @FXML
-    void ContinueButtonClicked(ActionEvent event) {
-        // για να μπορεί να μεπει ενας test user, για δοκιμαστικόυς σκοπούς, comment out 
+    void ContinueButtonClicked(ActionEvent event) throws IOException {
+        // για να μπορεί να μεπει ενας test user, για δοκιμαστικόυς σκοπούς, comment out
 
         if (UsernameField.getText().equals(testUser.getName()) && PasswordField.getText().equals(testUser.getPassword())) {
-            switch_scene(event, "UserWindow.fxml");
+
+            //δεν χρησιμοποιούμε switch_scene γιατί εχεί να μεταφέρει
+            //δεδομένα μεταξύ controllers
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("UserWindow.fxml"));
+            Parent root = loader.load();
+
+            UserWindowController control = loader.getController();
+            control.SetLabelText(UsernameField.getText());
+            // Parent root = FXMLLoader.load(getClass().getResource(filename));
+            Stage stage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+
+            Scene scene = new Scene(root);
+            stage.setScene(scene);
+
         }
     }
 

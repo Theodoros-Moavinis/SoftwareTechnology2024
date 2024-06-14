@@ -6,7 +6,7 @@ import javafx.scene.control.DatePicker;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
-public class UserWindowController {
+public class UserWindowController extends Controller{
 
     @FXML
     private Button DIYButton;
@@ -36,7 +36,13 @@ public class UserWindowController {
     private DatePicker StartDateField;
 
     @FXML
-    private Label UsernameText;
+    private Label InformationLabel;
+
+    @FXML
+    void SetLabelText(String text) {
+        InformationLabel.setText(text);
+    }
+
 
     @FXML
     void DIYButtonClicked(ActionEvent event) {
@@ -45,7 +51,7 @@ public class UserWindowController {
 
     @FXML
     void ExitButtonClicked(ActionEvent event) {
-
+        switch_scene(event, "GuestWindow.fxml");
     }
 
     @FXML

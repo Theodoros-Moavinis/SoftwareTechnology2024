@@ -8,6 +8,7 @@ import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.DatePicker;
+import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
@@ -19,6 +20,9 @@ public class GuestWindowController extends Controller implements Initializable {
 
     @FXML
     private Button LogInButton;
+
+    @FXML
+    private Label InformationLabel;
 
     @FXML
     private ListView<String> PackageListView;
@@ -46,6 +50,11 @@ public class GuestWindowController extends Controller implements Initializable {
 
     @FXML
     private Button SearchButton;
+
+    @FXML
+    void SetLabelText(String text) {
+        InformationLabel.setText(text);
+    }
 
     @FXML
     void DIYButtonClicked(ActionEvent event) {
